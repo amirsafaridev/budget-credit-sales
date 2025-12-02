@@ -1,0 +1,80 @@
+/**
+ * Checkout page styles
+ */
+.arta-budget-sale-type-wrapper {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.arta-budget-sale-type-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.arta-budget-sale-type {
+    margin-bottom: 0;
+}
+
+.arta-budget-sale-type label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.arta-budget-sale-type select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.arta-budget-sale-type select:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.arta-budget-sale-type select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+}
+
+.arta-budget-checkout-select-wrapper {
+    position: relative;
+}
+
+.arta-budget-checkout-loading-spinner {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: arta-budget-checkout-spin 1s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes arta-budget-checkout-spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+.arta-budget-sale-type-wrapper .description {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+

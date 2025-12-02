@@ -1,0 +1,577 @@
+/**
+ * Admin styles - Modern User Credit Management
+ */
+
+/* Main Container */
+.arta-budget-user-credit-wrap {
+    margin: 20px 20px 0 0;
+}
+
+.arta-budget-page-title {
+    font-size: 23px;
+    font-weight: 400;
+    padding: 9px 0 4px 0;
+    line-height: 1.3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arta-budget-page-title .dashicons {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.arta-budget-user-credit-container {
+    margin-top: 20px;
+}
+
+/* Table Header */
+.arta-budget-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+}
+
+.arta-budget-table-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Search Box */
+.arta-budget-search-box {
+    position: relative;
+    width: 300px;
+}
+
+.arta-budget-search-input {
+    width: 100%;
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.arta-budget-search-input:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.arta-budget-search-box .dashicons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #646970;
+    pointer-events: none;
+}
+
+/* Modern Table */
+.arta-budget-table-wrapper {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.arta-budget-modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.arta-budget-modern-table thead {
+    background: #f6f7f7;
+    border-bottom: 2px solid #c3c4c7;
+}
+
+.arta-budget-modern-table thead th {
+    padding: 12px 15px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 13px;
+    color: #1d2327;
+    border-bottom: 2px solid #c3c4c7;
+}
+
+.arta-budget-modern-table tbody tr {
+    border-bottom: 1px solid #f0f0f1;
+    transition: background-color 0.2s;
+}
+
+.arta-budget-modern-table tbody tr:hover {
+    background-color: #f6f7f7;
+}
+
+.arta-budget-modern-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.arta-budget-modern-table tbody td {
+    padding: 15px;
+    font-size: 14px;
+    color: #2c3338;
+}
+
+.arta-budget-modern-table tbody tr[style*="display: none"] {
+    display: none !important;
+}
+
+/* Credit Cell */
+.arta-budget-credit-cell {
+    font-weight: 600;
+}
+
+.arta-budget-credit-amount {
+    color: #00a32a;
+    font-size: 15px;
+}
+
+.arta-budget-currency {
+    color: #646970;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* Actions Cell */
+.arta-budget-actions-cell {
+    white-space: nowrap;
+}
+
+.arta-budget-actions-cell .arta-budget-btn {
+    margin-left: 5px;
+}
+
+/* Buttons */
+.arta-budget-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    background: #f6f7f7;
+    color: #2c3338;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.arta-budget-btn:hover {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+    color: #1d2327;
+}
+
+.arta-budget-btn:active {
+    background: #dcdcde;
+}
+
+.arta-budget-btn .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.arta-budget-btn-increase {
+    background: #00a32a;
+    color: #fff;
+    border-color: #00a32a;
+}
+
+.arta-budget-btn-increase:hover {
+    background: #008a20;
+    border-color: #008a20;
+    color: #fff;
+}
+
+.arta-budget-btn-decrease {
+    background: #d63638;
+    color: #fff;
+    border-color: #d63638;
+}
+
+.arta-budget-btn-decrease:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+    color: #fff;
+}
+
+.arta-budget-btn-history {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.arta-budget-btn-history:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+.arta-budget-btn-primary {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.arta-budget-btn-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+.arta-budget-btn-cancel {
+    background: #f6f7f7;
+    color: #2c3338;
+    border-color: #c3c4c7;
+}
+
+.arta-budget-btn-cancel:hover {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+}
+
+/* Empty State */
+.arta-budget-empty-state {
+    text-align: center;
+    padding: 40px 20px !important;
+    color: #646970;
+    font-size: 14px;
+}
+
+/* Popup Styles */
+.arta-budget-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+.arta-budget-popup.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arta-budget-popup-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+.arta-budget-popup-content {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    animation: popupFadeIn 0.3s ease-out;
+}
+
+.arta-budget-popup-content-large {
+    max-width: 800px;
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.arta-budget-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f6f7f7;
+}
+
+.arta-budget-popup-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.arta-budget-popup-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #646970;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.arta-budget-popup-close:hover {
+    background: #dcdcde;
+    color: #1d2327;
+}
+
+.arta-budget-popup-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.arta-budget-user-info-popup {
+    background: #f0f6fc;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-right: 4px solid #2271b1;
+}
+
+.arta-budget-user-info-popup p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #2c3338;
+}
+
+.arta-budget-user-info-popup strong {
+    color: #1d2327;
+}
+
+/* Form Styles */
+.arta-budget-popup-form {
+    margin-top: 0;
+}
+
+.arta-budget-form-group {
+    margin-bottom: 20px;
+}
+
+.arta-budget-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.arta-budget-form-input,
+.arta-budget-form-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.arta-budget-form-input:focus,
+.arta-budget-form-textarea:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.arta-budget-form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.arta-budget-popup-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f1;
+}
+
+.arta-budget-popup-actions .arta-budget-btn {
+    flex: 0 0 auto;
+}
+
+/* History Content */
+.arta-budget-history-content {
+    margin-top: 20px;
+}
+
+.arta-budget-loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #646970;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.arta-budget-loading .spinner {
+    float: none;
+    margin: 0;
+}
+
+.arta-budget-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.arta-budget-history-table thead {
+    background: #f6f7f7;
+    border-bottom: 2px solid #c3c4c7;
+}
+
+.arta-budget-history-table thead th {
+    padding: 10px 12px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+    color: #1d2327;
+}
+
+.arta-budget-history-table tbody tr {
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.arta-budget-history-table tbody tr:hover {
+    background-color: #f6f7f7;
+}
+
+.arta-budget-history-table tbody td {
+    padding: 12px;
+    font-size: 13px;
+    color: #2c3338;
+}
+
+.arta-budget-history-positive {
+    color: #00a32a;
+    font-weight: 600;
+}
+
+.arta-budget-history-negative {
+    color: #d63638;
+    font-weight: 600;
+}
+
+.arta-budget-history-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #646970;
+    font-size: 14px;
+}
+
+/* Message Styles */
+.arta-budget-message {
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    z-index: 100001;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: messageSlideIn 0.3s ease-out;
+    max-width: 400px;
+}
+
+@keyframes messageSlideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.arta-budget-message.success {
+    background: #00a32a;
+    color: #fff;
+    border-right: 4px solid #008a20;
+}
+
+.arta-budget-message.error {
+    background: #d63638;
+    color: #fff;
+    border-right: 4px solid #b32d2e;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .arta-budget-user-credit-container {
+        flex-direction: column;
+    }
+    
+    .arta-budget-table-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .arta-budget-search-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 782px) {
+    .arta-budget-modern-table {
+        font-size: 12px;
+    }
+    
+    .arta-budget-modern-table thead th,
+    .arta-budget-modern-table tbody td {
+        padding: 10px 8px;
+    }
+    
+    .arta-budget-actions-cell {
+        white-space: normal;
+    }
+    
+    .arta-budget-actions-cell .arta-budget-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        justify-content: center;
+    }
+    
+    .arta-budget-popup-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+}
